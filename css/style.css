@@ -77,10 +77,24 @@ margin-right: 50px;
 .container-nav{
 }
 .head-contact{ color: var(--secondary-color);
-  padding: 32px 0;}
+  padding: 32px 0;
+display: flex;
+align-items: center;}
 .head-contact:hover,
 .head-contact:focus{
 color: var(--main-color);}
+
+.mail{
+  margin-right: 10px;
+  fill: currentColor;
+}
+/* .tell{
+  margin-right: 10px;
+  fill: currentColor;
+} */
+
+
+
 
                         /* Главный банер */
               /* main */
@@ -90,6 +104,11 @@ color: var(--main-color);}
   height: 600px;
   padding: 200px 0;
   text-align: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+   rgba(47, 48, 58, 0.4)),
+  url(../img/hero.jpg);
+  background-size: cover;
+
 }
 .hero-title{text-transform: uppercase;
   font-style: normal;
@@ -128,6 +147,22 @@ padding: 94px 0;}
 }
 .key-list:not(:last-child){
 margin-right: 30px;}
+
+.key-svg{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 270px;
+height: 120px;
+background: #F5F4FA;
+border-radius: 4px;
+margin-bottom: 30px;
+
+}
+.key-svg-icon{
+  width: 70px;
+  height: 70px;
+}
 
 .visually-hidden {
 position: absolute;
@@ -224,17 +259,93 @@ border-radius: 0px 0px 4px 4px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  margin-bottom: 16px;
 }
 .text-blok{
 padding: 30px 0;}
+
+.social-list{
+display: flex;
+justify-content: center;
+gap: 10px;}
+
+.social-list-link{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 44px;
+height: 44px;
+border-radius: 50%;
+background-color: #FFFFFF;
+}
+
+.social-list-link:hover,
+.social-list-link:focus{
+background-color: var(--main-color);}
+
+.social-list-link:hover .social-list-ikon,
+.social-list-link:focus .social-list-ikon{
+fill: #FFFFFF;}
+
+.social-list-ikon{
+fill: #AFB1B8;
+}
+/* ===========Постоянные клиенты===========  */
+.client-section{
+padding: 94px 0;}
+
+.client-title{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  margin-bottom: 50px;}
+.client-list{
+  display: flex;
+  gap: 30px;
+}
+
+.client-link{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 170px;
+height: 92px;
+border:1px solid #AFB1B8;
+border-radius: 4%;
+background-color: #FFFFFF;
+}
+
+.client-link:hover,
+.client-link:focus{
+  border:1px solid var(--main-color);
+}
+.client-link-ikon{
+fill: #AFB1B8;}
+.client-link:hover .client-link-ikon,
+.client-link:focus .client-link-ikon{
+fill: var(--main-color);
+}
+
+
+
+/* ===========Постоянные клиенты===========  */
+
 /*============== footer=========== */
 .footer{
   background-color: #2F303A;
   padding: 60px 0;
 }
-.footer-block{
+.footer-address-svg{
+display: flex;}
+.footer-block-address{
   display: flex;
   flex-direction: column;
+  margin-right: 70px;
  }
 
 .logo-footer{color: var(--main-color);
@@ -272,13 +383,49 @@ margin-bottom: 9px;}
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
+  .footer-social{
+  padding-top: 12px;}
+
+  .footer-social-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  margin-bottom: 20px;}
+  
+
+  .footer-social-list-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    }
+    
+    .footer-social-list-link:hover,
+    .footer-social-list-link:focus{
+    background-color: var(--main-color);}
+    
+    .footer-social-list-link:hover .footer-social-list-ikon,
+    .footer-social-list-link:focus .footer-social-list-ikon{
+    fill: #FFFFFF;}
+    
+    .footer-social-list-ikon{
+    fill: #FFFFFF;}
  
 
 
   /* =========================portfolio ===============*/
-.portfolio{
-  padding: 94px 0;
   
+  
+.portfolio-section{
+  padding: 94px 0;
 }
 .menu-portfolio{
 display: flex;
@@ -321,7 +468,7 @@ margin-bottom: 34px;
   
   
   
-  .porfolio-title{
+  .portfolio-title{
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
